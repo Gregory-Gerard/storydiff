@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* reset @tailwindcss/forms */
+  [type='text'], [type='checkbox'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'], [type='datetime-local'], [type='month'], [type='search'], [type='tel'], [type='time'], [type='week'], [multiple], textarea, select {
+    @apply border-neutral-800 focus:border-brand-500/50 focus:ring-brand-500/20 focus:ring-offset-0 bg-neutral-900
+  }
+}

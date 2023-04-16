@@ -4,14 +4,10 @@ const nextConfig = {
     appDir: true,
     typedRoutes: true,
   },
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'image.tmdb.org',
-        pathname: '/t/p/**',
-      },
-    ],
+  modularizeImports: {
+    'lucide-react': {
+      transform: 'lucide-react/dist/esm/icons/{{ kebabCase member }}',
+    },
   },
 };
 
